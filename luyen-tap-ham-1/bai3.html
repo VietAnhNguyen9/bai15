@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="result"></div>
+</body>
+<script>
+  function compare(a,b){
+    if (a > b){
+      alert(a+ ' lớn hơn '+b);
+    }else if (a < b){
+      return a + b;
+    }else{
+      alert(a+ ' bằng '+ b);
+    }
+  }
+  let a = +prompt('Nhập số thứ nhất');
+  let b = +prompt('Nhập số thứ 2');
+  let result = compare(a,b);
+  document.getElementById('result').innerHTML='Tổng của 2 số là '+result;
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let str = prompt('Nhập:')
+    let arr = str.split("");
+  function isPalindrome(str){
+      let flag = true;
+      for (let i=0;i<arr.length/2;i++){
+          if (arr[i] !== arr[arr.length - i - 1]){
+          flag = false;
+          break;
+          }
+      }
+      if (flag){
+        return  str + " là một chuỗi đối xứng";
+      }else{
+        return  str + " không là một chuỗi đối xứng";
+      }
+
+  }
+    document.write(isPalindrome(str));
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="a"></div>
+</body>
+<script>
+  let star1 = ['Polaris','Aldebaran','Deneb','Vega',' Altair','Dubhe','Regulus'];
+  let star2 = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+  function checkStar (star) {
+      let index_star1 = star1.indexOf(star);
+      if (index_star1 !== -1) {
+          return star2[index_star1];
+      }else{
+          return "Không có ngôi sao nào"
+      }
+  }
+  let star = prompt('Nhập tên ngôi sao');
+  let answer = checkStar (star);
+  document.getElementById('a').innerHTML= 'Chòm sao tương ứng với ngôi sao '+ star +' là: '+ answer ;
+</script>
+</html>

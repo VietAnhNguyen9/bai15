@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let str = prompt('Nhập chuỗi bất kì');
+  //xin chào các bạn
+  let arr = [];
+  // arr.push(str); [xin chào các bạn]
+  arr = str.split(" "); //[xin, chào, các, bạn]
+
+  function check(arr){
+    let characters = prompt('Nhập kí tự bất kì');
+    //xin
+    let count = 0;
+    let flag = false;
+    for (let i=0;i<arr.length;i++){
+      if (characters === arr[i]){
+        flag = true;
+        count +=1;
+      }
+    }
+    if(flag) {
+      return count;
+    } else {
+      return -1;
+    }
+  }
+  document.write(check(arr));
+
+
+
+
+
+
+</script>
+</html>
